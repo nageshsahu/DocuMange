@@ -1,3 +1,125 @@
+# 📂 Document Management System (React)
+
+A *full-featured Document Management System (DMS)* built using *React.js*.  
+The system is designed for managing documents securely, with features like user authentication, uploading, settings management, charts for analytics, and reusable UI components.  
+
+This project follows *modular architecture* with proper separation of concerns into components, pages, hooks, context, and utils.
+
+---
+
+## 📖 Table of Contents
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Available Scripts](#-available-scripts)
+- [Testing](#-testing)
+- [Deployment](#-deployment)
+- [Contributing](#-contributing)
+- [Future Improvements](#-future-improvements)
+- [License](#-license)
+- [Acknowledgements](#-acknowledgements)
+
+---
+
+## 🚀 Features
+- 🔐 *Authentication System*
+  - Login, Profile, and Admin access.
+- 📁 *Document Upload & Management*
+  - Upload forms, validation, and secure storage.
+- ⚙ *User & Admin Dashboard*
+  - Admin and user-specific views with charts.
+- 📊 *Data Visualization*
+  - Category-based and monthly upload charts.
+- 🌙 *Dark Mode Support*
+  - Toggle dark/light themes via custom hooks.
+- 🔔 *Notifications*
+  - Toast notifications and user alerts.
+- ⚡ *Reusable Components*
+  - Forms, Modals, Error boundaries, Sidebar, Navbar.
+- 🛠 *Utilities*
+  - API integration, data validation, helper functions.
+- 🧑‍🤝‍🧑 *Scalable Architecture*
+  - Context API for global state, custom hooks for reusability.
+
+---
+
+## 🛠 Tech Stack
+- *Frontend:* [React.js](https://react.dev/) with JSX
+- *State Management:* Context API
+- *Styling:* CSS (with modular structure, can extend to Tailwind/SCSS)
+- *Charts:* Recharts / Chart.js
+- *Routing:* React Router (if used)
+- *Testing:* Jest + React Testing Library
+- *Build Tool:* Create React App (CRA)
+- *Version Control:* Git & GitHub
+
+---
+
+## 📂 Project Structure
+
+docs/
+├── node_modules/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── charts/
+│   │   │   ├── CategoryChart.jsx
+│   │   │   └── MonthlyUploadChart.jsx
+│   │   ├── common/
+│   │   │   ├── ErrorBoundary.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── PreviewModal.jsx
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── Toast.jsx
+│   │   ├── forms/
+│   │   │   ├── AdminUserForm.jsx
+│   │   │   ├── LoginForm.jsx
+│   │   │   └── UploadForm.jsx
+│   │   └── settings/
+│   │       ├── BackupSettings.jsx
+│   │       ├── GeneralSettings.jsx
+│   │       ├── NotificationSettings.jsx
+│   │       ├── SecuritySettings.jsx
+│   │       └── StorageSettings.jsx
+│   ├── context/
+│   │   └── AppContext.jsx
+│   ├── hooks/
+│   │   ├── useChart.jsx
+│   │   ├── useDarkMode.jsx
+│   │   ├── useLocalStorage.jsx
+│   │   └── useToast.jsx
+│   ├── pages/
+│   │   ├── Admin.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Login.jsx
+│   │   ├── Profile.jsx
+│   │   ├── Search.jsx
+│   │   ├── Settings.jsx
+│   │   └── Upload.jsx
+│   ├── utils/
+│   │   ├── api.js
+│   │   ├── helper.js
+│   │   └── validation.js
+│   ├── App.jsx
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
